@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# uv
+uv.lock
+
+# Rendered datasets and models (too big for git)
+data/
+models/
+*.wav
+*.flac
+*.parquet
+*.npy
+*.npz
+*.pt
+*.ckpt
+
+# TouchDesigner backups
+td/Backup/
+*.toe.tmp
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,34 @@
+[project]
+name = "synth-galaxy"
+version = "0.1.0"
+description = "3D-navigable latent space of synth patches — bidirectional VAE w/ audio consistency, TouchDesigner front-end"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "dawdreamer>=0.8.3",
+    "flask>=3.1.3",
+    "laion-clap>=1.1.5",
+    "librosa>=0.11.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.4",
+    "pandas>=3.0.3",
+    "plotly>=6.7.0",
+    "pyarrow>=24.0.0",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "soundfile>=0.13.1",
+    "torch>=2.12.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.27.0",
+    "tqdm>=4.67.3",
+    "umap-learn>=0.5.12",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/synth_galaxy"]
+
+[tool.uv]
+package = true

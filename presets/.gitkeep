@@ -1,0 +1,3 @@
+Placeholder so this folder exists in the repo. Optional local staging area
+for `.vital` files you're actively working with; the main pipeline reads
+directly from `~/Music/Vital/` (or wherever you configure via `config.py`).
