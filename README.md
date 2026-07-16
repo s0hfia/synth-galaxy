@@ -26,9 +26,7 @@ For a folder of `.vital` files, this pipeline:
    - **Click any orb** → sidebar with top-5 CLAP labels, 5 nearest sonic neighbors, top 10 z-scored standout params, active mod routings, 4×4 mod-fingerprint SVG, playback
    - **Drag any audio file onto the page** → CLAP-encoded, matched against your presets AND against a 66,904-wavetable corpus (WaveEdit Online + AKWF), extracts a wavetable from the audio, generates a fresh `.vital` file that lands in `~/Music/Vital/User/Presets/`
 
-## Novel technical contribution
-
-`src/synth_galaxy/preset_loader_full.py` is (as far as I can tell) the first public code that loads `.vital` preset files into a **headless dawdreamer plugin instance**. Vital's `.vital` files are JSON but its VST3 state chunk uses JUCE's `VC2!`-magic-wrapped `MemoryBlock` base64 format. This module bridges them so you can programmatically apply any `.vital` preset without the Vital GUI. Details in [`PRESET_LOADER_NOTES.md`](PRESET_LOADER_NOTES.md).
+`src/synth_galaxy/preset_loader_full.py` loads `.vital` preset files into a **headless dawdreamer plugin instance**. Vital's `.vital` files are JSON but its VST3 state chunk uses JUCE's `VC2!`-magic-wrapped `MemoryBlock` base64 format. This module bridges them so you can programmatically apply any `.vital` preset without the Vital GUI. Details in [`PRESET_LOADER_NOTES.md`](PRESET_LOADER_NOTES.md).
 
 ## Prerequisites
 
@@ -86,7 +84,7 @@ presets/                      # optional local staging (gitignored)
 td/                           # TouchDesigner front-end (future)
 ```
 
-## The audio-drop workflow (the killer feature)
+## The audio-drop workflow
 
 Once you have a galaxy running, drop any audio file onto the browser page:
 
