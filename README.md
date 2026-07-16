@@ -94,7 +94,7 @@ Once you have a galaxy running, drop any audio file onto the browser page:
 4. **Matches against the 66,904-wavetable corpus** (WaveEdit Online + AKWF public-domain libraries)
 5. **Generates a `.vital` preset file** using the extracted wavetable + FX/modulation defaults inherited from your nearest neighbor, saved to `~/Music/Vital/User/Presets/`
 
-Producer workflow: love a stem in a Porter Robinson track? Drop it. Ten seconds later you have a real, editable, playable `.vital` file using a wavetable extracted from that exact audio, sitting alongside the nearest matches from your own library. Open Vital, load it, tweak it.
+Producer workflow: love a stem in a track? Drop it. Ten seconds later you have a real, editable, playable `.vital` file using a wavetable extracted from that exact audio, sitting alongside the nearest matches from your own library. Open Vital, load it, tweak it.
 
 ## Why the presets aren't in this repo
 
